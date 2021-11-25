@@ -1,0 +1,1290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --background-color: #101727;
+    --box-shadow: 0 .3rem .3rem rgba(7, 0, 0, 0.995);
+    --bold-font-family: 'Dosis', sans-serif;
+    --regular-font-family: 'Dosis', sans-serif;
+    --medium-font-family: 'Dosis', sans-serif;
+    --light-font-family: 'Dosis', sans-serif;
+    --gradient: linear-gradient(to right, #0000FF, #16075b);
+}
+
+/**************************************************************************/
+/*                               Navigation Bar                           */
+/**************************************************************************/
+
+.navbar {
+    background-color: var(--background-color) !important;
+    position: fixed;
+    width: 100vw;
+    box-shadow: var(--box-shadow);
+    z-index: 9999;
+}
+
+.navbar-brand {
+    padding-top: 0rem !important;
+}
+
+.navbar-brand img {
+    max-height: 4rem;
+    padding-top: .5rem;
+}
+
+#navbarSupportedContent {
+    margin-top: .3rem;
+    padding: 1rem 0rem;
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-family: var(--regular-font-family);
+    -webkit-text-stroke: .05rem white;
+}
+
+.nav-link:hover {
+    background: -webkit-radial-gradient(#0000FF, #16075b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    -webkit-text-stroke: .05rem #0000FF;
+}
+
+/* .dropdown:hover .dropdown-menu{
+    display: block;
+} */
+
+
+@media only screen and(min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.navbar .btn {
+    background-image: var(--gradient);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: .1rem solid white;
+}
+
+.navbar .btn:hover {
+    background-image: linear-gradient(to right, #0000FF, #16075b, #0000FF);
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 .3rem .3rem #0000ff74;
+
+}
+
+.dropdown-menu {
+    background-color: azure;
+}
+
+/*
+.dropdown-item {
+    position: relative;
+}
+*/
+.dropdown-item:before {
+    width: 3px;
+    height: 100%;
+    background: #131212;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+dropdown-item:hover {
+    background-color: rgb(211, 221, 221);
+    color: var(--background-color);
+
+}
+
+.dropdown-item:hover:before {
+    opacity: 1;
+
+}
+
+.navbar-toggler {
+    border-color: #1613cd;
+    border-width: .1rem;
+    border-style: solid;
+    width: 4rem;
+    opacity: 1.0;
+}
+
+.navbar-collapse {
+    padding: 0rem;
+}
+
+.dropdown-menu a {
+    position: relative;
+    top: .01rem;
+    font-size: .8rem;
+}
+
+.dropdown-menu a img {
+    height: 2rem;
+    margin-right: .5rem;
+    padding-top: .3rem;
+}
+
+.dropdown-menu p {
+    margin-top: -2rem;
+    margin-left: 2.3rem;
+}
+
+.dropdown-menu .services {
+    font-size: .65rem;
+    position: absolute;
+    left: 3.3rem;
+    color: blue;
+    top: .5rem;
+}
+
+.margin-top p {
+    margin-top: -2rem !important;
+}
+
+.margin-top span {
+    top: 1.3rem !important;
+}
+
+#plan {
+    font-size: .8rem;
+    color: blue;
+}
+
+
+.drop-down02 {
+    position: relative;
+}
+
+.drop-down02 .sub-menu02 {
+    position: absolute !important;
+    left: 100%;
+    top: 0;
+}
+
+.drop-down02 .dropdown-toggle {
+    padding: .25rem 1.1rem !important;
+}
+
+@media screen and (max-width :767px) {
+    .drop-down02 .sub-menu02 {
+        position: static !important;
+    }
+}
+
+
+
+
+body {
+    background-color: var(--background-color);
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background-image: url(media/halftone-01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+    display: inline-block;
+    animation: abc;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+    box-shadow: var(--box-shadow);
+}
+
+@keyframes abc {
+    0% {
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    100% {
+        width: 8rem;
+        height: 8rem;
+        transform: rotate(180deg);
+    }
+
+
+}
+
+.circlebig {
+    width: 18rem;
+    height: 18rem;
+    background-image: url(media/globe.webp);
+    background-color: #0905fc59;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 4rem;
+    left: 34%;
+    display: inline-block;
+    animation: circlebig;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+    box-shadow: var(--box-shadow);
+    opacity: 0.2;
+}
+
+.circlebig1 {
+    width: 25rem;
+    height: 25rem;
+    background-image: url(media/globe.webp);
+    background-color: #0905fc59;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+    opacity: 0.1;
+    display: inline-block;
+    animation: circlebig;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+    box-shadow: var(--box-shadow);
+}
+
+@keyframes circlebig {
+    0% {
+        width: 25rem;
+        height: 25rem;
+
+    }
+
+    100% {
+        width: 25rem;
+        height: 25rem;
+        transform: rotate(180deg);
+    }
+
+
+}
+
+.circle1 {
+    width: 5rem;
+    height: 5rem;
+    border: 1rem solid blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+    display: inline-block;
+    animation: abc1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform: translate(0, 0);
+    box-shadow: var(--box-shadow);
+}
+
+@keyframes abc1 {
+    0% {
+        width: 5rem;
+        height: 5rem;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        width: 5rem;
+        height: 5rem;
+        transform: translate(30rem, 30rem);
+    }
+}
+
+.circle2 {
+    width: 3rem;
+    height: 3rem;
+    border: .5rem solid blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    display: inline-block;
+    animation: abc2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transform: translate(0, 0);
+    box-shadow: var(--box-shadow);
+
+}
+
+@keyframes abc2 {
+    0% {
+        width: 3rem;
+        height: 3rem;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        width: 3rem;
+        height: 3rem;
+        transform: translate(10rem, 10rem);
+    }
+}
+
+/**************************************************************************/
+/*                               Header Section                           */
+/**************************************************************************/
+.header {
+    width: 90vw;
+    height: 73vh;
+    color: white;
+    position: relative;
+    top: 10rem;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-bottom: 10rem solid transparent;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonialsHeader {
+    height: 77vh;
+}
+
+.header-txt {
+    font-family: var(--bold-font-family);
+    text-transform: uppercase;
+    /* background-image: -webkit-radial-gradient(#0000FF,#3206f7,#3206f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #0000FF;
+    font-size: 5rem;
+    text-shadow: 0 .6rem .6rem black;
+    -webkit-text-stroke: .02rem white;
+    font-size: 3rem;
+    margin: 2rem 0;
+
+}
+
+#header-txtid {
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+#header-txtid2 {
+    font-size: 1.5rem;
+}
+
+.header h3 {
+    font-family: var(--medium-font-family);
+    font-size: 2.5rem;
+}
+
+.header .content .btn1 {
+    background-image: var(--gradient);
+    color: white;
+    border: .1rem solid white;
+    text-decoration: none;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .1rem;
+}
+
+#btn1id:hover {
+    background-image: linear-gradient(white, white);
+    color: #0000FF;
+}
+
+#btn2id {
+    background-image: linear-gradient(white, white);
+    color: #0000FF;
+}
+
+#btn2id:hover {
+    background-image: var(--gradient);
+    color: white;
+}
+
+.header .content {
+    position: relative;
+    top: 0rem;
+    display: inline-block;
+}
+
+.header .content img {
+    animation-name: example;
+    animation-duration: 4s;
+    width: 15rem;
+    height: 15rem;
+    animation-iteration-count: infinite;
+    position: relative;
+    transform: rotate(180deg);
+    display: block;
+
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(180deg);
+        top: 0;
+    }
+
+    25% {
+        transform: rotate(-50deg);
+        bottom: 15rem;
+        width: 15rem;
+        height: 15rem
+    }
+
+    50% {
+        transform: rotate(-50deg);
+        bottom: 30rem;
+        width: 15rem;
+        height: 15rem
+    }
+
+    75% {
+        transform: rotate(-50deg);
+        bottom: 30rem;
+        width: 15rem;
+        height: 15rem
+    }
+
+    100% {
+        transform: rotate(-50deg);
+        bottom: 30rem;
+        width: 15rem;
+        height: 15rem
+    }
+}
+
+/**************************************************************************/
+/*                               About Section                             /
+/**************************************************************************/
+.about {
+    width: 97vw;
+    color: white;
+    text-align: center;
+    background-color: var(--background-color);
+    position: relative;
+    top: 10rem;
+    padding: 3rem;
+}
+
+.about .container {
+    box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
+}
+
+.about .container .row .col img {
+    /* height: 30rem !important; */
+    width: 100%;
+
+
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+.about h2 {
+    color: blue;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: justify !important;
+}
+
+.about p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.about .container {
+    margin-top: 3rem;
+}
+
+.about .btn {
+    margin-top: 2rem;
+}
+
+/**************************************************************************/
+/*                               Services Section                          /
+/**************************************************************************/
+.our-services {
+    width: 98vw;
+    background-color: var(--background-color);
+    background-image: url(media/servicesbg.webp);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: white;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: relative;
+    top: 6.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.our-services h1 {
+    font-size: 3rem;
+    font-family: var(--bold-font-family);
+}
+
+.our-services .container .row .col .card {
+    background-color: var(--background-color);
+    border: .1rem solid black;
+    box-shadow: var(--box-shadow);
+    transition: width 4s, height 4s;
+    transition-timing-function: ease-in-out;
+    padding-top: 1rem;
+    border-top: .1rem solid white;
+    margin: auto;
+    width: 16.4rem !important;
+    height: 56vh;
+    margin-top: 2rem;
+
+}
+
+.webDesCard {
+    height: 22rem !important;
+}
+
+.our-services .container .row .col .card:hover {
+    border-right: .1rem solid blue;
+    border-left: .1rem solid blue;
+    border-top: .1rem solid blue;
+    border-bottom: .1rem solid blue;
+}
+
+.our-services .container {
+    text-align: center;
+}
+
+.our-services .container .row .col .card img {
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/**************************************************************************/
+/*                               Portfolio Section                         /
+/**************************************************************************/
+.portfolio {
+    width: 97vw;
+    background-color: var(--background-color);
+    position: relative;
+    top: 5rem;
+    color: white;
+    padding: 3rem;
+}
+
+.portfolio h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.portfolio .paragraph {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio .container {
+    text-align: center;
+    box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
+    background-color: var(--background-color);
+    background-image: url(media/servicesbg.webp);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.portfolio .container .row .col img {
+
+    width: 100%;
+}
+
+.portfolio .container .btn1 {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.portfolio .card {
+    background-color: white;
+    height: 23rem;
+    box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
+    margin-top: 1rem;
+}
+
+.portfolio-div {
+    overflow: hidden;
+    height: 35rem;
+    position: relative;
+}
+
+.img-div {
+    overflow: hidden;
+    height: 35rem;
+    position: relative;
+    transition: transform 2s;
+    background-position: center;
+}
+
+.img-div:hover {
+    transform: scale(1.5);
+}
+
+.img-div img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-details-div {
+    height: 23rem;
+    background-color: #DB1515;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    bottom: .5rem;
+    right: .5rem;
+    color: white;
+    padding: 1rem;
+    transform: scaleY(0);
+    transition: transform .5s;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+.portfolio-div:hover .portfolio-details-div {
+    transform: scaleY(1);
+    overflow: hidden;
+}
+
+.portfolio .container-fluid {
+    color: white;
+    text-align: center;
+}
+
+.portfolio .container-fluid .row .col .card {
+    background-color: var(--background-color);
+    height: 9rem;
+
+}
+
+/**************************************************************************/
+/*                               Testimonials Section                      /
+/**************************************************************************/
+.testimonials {
+    width: 97vw;
+    background-color: var(--background-color);
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.testimonials i {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: .1rem .1rem .1rem black;
+    animation-name: rating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rating {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(255, 225, 0);
+    }
+}
+
+.testimonials .container .row .col .card .card-body .card-text {
+    margin-top: 1rem;
+}
+
+.testimonials .container .row .col .card {
+    background-color: transparent;
+    color: white;
+    margin: auto;
+}
+
+.testimonials .container .row .col .card p {
+    text-align: center;
+}
+
+.testimonials .container .row .col .card img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: .5rem solid white;
+    box-shadow: var(--box-shadow);
+    animation-name: images;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: scale(0, 0);
+}
+
+@keyframes images {
+    from {
+        transform: scale(0, 0);
+        color: white;
+        border: .5rem solid white;
+    }
+
+    to {
+        transform: scale(1, 1);
+        color: blue;
+        border: .2rem solid blue;
+    }
+}
+
+.testimonials .container .row .col .card h2 {
+    animation-name: htwo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes htwo {
+    from {
+        color: white;
+    }
+
+    to {
+        color: blue;
+    }
+}
+
+.testimonials .btn {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/**************************************************************************/
+/*                               Clients Section                           /
+/**************************************************************************/
+.clients {
+    width: 97vw;
+    background-color: var(--background-color);
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+#headertxtId {
+    color: white;
+    box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
+    margin: auto;
+    border-radius: .2rem;
+}
+
+.clients .btn1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.clients .btn1:hover {
+    background-color: blue;
+}
+
+.clients .btn2 {
+    background-color: blue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.clients .btn2:hover {
+    background-color: transparent;
+    border: .1rem solid blue;
+}
+
+.clients .container {
+    box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
+    padding: 1rem;
+}
+
+/**************************************************************************/
+/*                               Partners Section                          /
+/**************************************************************************/
+.partner {
+    background-color: var(--background-color);
+    background-image: url(media/partner1.jpg);
+    background-blend-mode: multiply;
+    width: 97vw;
+    position: relative;
+    top: 5rem;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 1rem;
+}
+
+#headertxtId1 {
+    color: white;
+    margin: auto;
+    border-radius: .2rem;
+}
+
+.partner p {
+    width: 70vw;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.partner .btn3 {
+    background-color: white;
+    color: blue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.partner .btn3:hover {
+    background-color: blue;
+    color: white;
+    border: .2rem solid white;
+}
+
+.header p {
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+#partnerHeader {
+    margin-bottom: 1rem;
+}
+
+/**************************************************************************/
+/*                               Contact Section                           /
+/**************************************************************************/
+.contact {
+    width: 97vw;
+    background-color: var(--background-color);
+    position: relative;
+    top: 5rem;
+    padding: 3rem;
+}
+
+.contact h3 {
+    color: blue;
+    text-align: left;
+}
+
+.contact .container h1 {
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.contact p {
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+}
+
+.contact .btn3 {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact .btn3:hover {
+    background-color: white;
+    color: blue;
+    border: .2rem solid white;
+}
+
+.contact .container .row .col .q-chat {
+    border: .1rem solid white;
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.contact .container .row .col .q-chat:hover {
+    background-color: rgba(0, 0, 255, 0.317);
+    border: blue solid .1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .container .row .col form {
+    margin-top: 1rem;
+}
+
+#social-links {
+    margin: .1rem;
+    color: blue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .1rem;
+    border: .1rem solid blue;
+    box-shadow: .3rem .3rem .3rem .3rem rgb(7, 7, 8);
+    border-radius: .2rem;
+}
+
+#social-links:hover {
+    background-color: blue;
+    color: white;
+    border: .1rem solid white;
+}
+
+#headerTxtCenter {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+
+/**************************************************************************/
+/*                               Footer Section                            /
+/**************************************************************************/
+.footer {
+    width: 98vw;
+    background-color: azure;
+    position: relative;
+    top: 5rem;
+    padding: 2rem 0;
+}
+
+.footer h3 {
+    color: blue;
+}
+
+.footer img {
+    height: 6.5rem !important;
+    margin: .5rem 0;
+}
+
+#social-links-f {
+    margin: .1rem;
+    color: blue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: .3rem;
+    border-radius: .1rem;
+    border: .1rem solid blue;
+    box-shadow: .1rem .1rem .1rem .1rem rgba(205, 205, 210, 0.687);
+}
+
+#social-links-f:hover {
+    border: .1rem solid white;
+    color: white;
+    display: inline-block;
+    background-color: blue;
+}
+
+.footer .container .row .col .q-chat {
+    border: .1rem solid blue;
+    color: blue;
+    padding: .5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    box-shadow: .1rem .1rem .1rem .1rem rgb(219, 219, 221);
+    border-radius: .1rem;
+    margin-top: 1rem;
+}
+
+.footer .container .row .col .q-chat:hover {
+    border: .1rem solid white;
+    color: white;
+    display: inline-block;
+    background-color: blue;
+}
+
+.footer .btn4 {
+    margin-top: .2rem;
+    background-color: azure;
+    border: .1rem solid blue;
+    color: blue;
+}
+
+.footer .btn4:hover {
+    margin-top: .2rem;
+    background-color: blue;
+    border: .1rem solid white;
+    color: white;
+}
+
+.f-bottom {
+    text-align: center;
+}
+
+.f-bottom a {
+    text-decoration: none;
+    color: rgb(30, 7, 245);
+    margin: .2rem;
+}
+
+.f-bottom a:hover {
+    text-decoration: underline;
+}
+
+.f-bottom p {
+    margin-top: .2rem;
+    margin-bottom: 0rem;
+}
+
+/* Home Page end of styling */
+
+/* About Page start of styling */
+.about ul {
+    text-align: left;
+}
+
+#ceo-message {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: .5rem solid white;
+    box-shadow: var(--box-shadow);
+    margin-top: 3rem;
+}
+
+/* About Page end of styling */
+
+/**************************************************************************/
+/*                               Portfolio Section                         /
+/**************************************************************************/
+.G-designing-portfolio {
+    position: relative;
+    top: 14rem;
+    text-align: center;
+    width: 98vw;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.G-designing-portfolio a {
+    text-decoration: none;
+    border: .1rem solid blue;
+    border-radius: .2rem;
+    padding: 1rem;
+}
+
+.G-designing-portfolio a:hover {
+    border: .1rem solid white;
+    border-radius: .2rem;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+}
+
+#infoPortfolio {
+    background-color: transparent;
+}
+
+#booksDesign {
+    background-color: transparent;
+    margin-top: 0rem;
+}
+
+.G-designing-portfolio .container {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.G-designing-portfolio .container .card {
+    box-shadow: none;
+}
+
+
+/**************************************************************************/
+/*                               Pricing Section                           /
+/**************************************************************************/
+
+.pricing-section {
+    width: 98vw;
+    background-color: white;
+    padding-top: 3rem;
+    margin-top: 12rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.priceListWrap {
+    height: 6rem;
+    line-height: 3rem;
+}
+
+.pricing-section a {
+    border: .1rem solid blue;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: .2rem;
+}
+
+.pricing-section a:hover {
+    border: .1rem solid white;
+    text-decoration: none;
+    background-color: #1613cd;
+    color: white;
+    border-radius: .2rem;
+}
+
+.pricing-section .container .row .col .card ul {
+    text-align: left;
+}
+
+@media only screen and (max-width: 710px) {
+    .pricing-section a {
+
+        padding: .4rem;
+
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 70%;
+    }
+
+
+    .header {
+        text-align: left;
+    }
+
+    .circlebig1,
+    .circlebig,
+    .circle,
+    .circle2,
+    .circle1 {
+        display: none;
+    }
+
+
+    #aboutImgcol img {
+        margin-left: -2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 80%;
+    }
+
+    .about .container .row .col img {
+        width: 63%;
+    }
+
+    .portfolio .container .row .col img {
+        width: 69%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .circlebig {
+        left: 46%;
+    }
+
+    .about .container .row .col img {
+        width: 100%;
+    }
+
+    .portfolio .container .row .col img {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 100%;
+    }
+    .our-services .container .row .col .card {
+
+        height: 62vh;
+    }
+
+    .card-body h3 {
+        font-size: 3.3rem !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+
+    .about .container .row .col img {
+        width: 76%;
+    }
+
+    .card-body h3 {
+        font-size: 4.5rem
+    }
+}
