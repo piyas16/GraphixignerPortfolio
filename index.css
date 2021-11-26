@@ -131,8 +131,6 @@ dropdown-item:hover {
 }
 
 .dropdown-menu a {
-    position: relative;
-    top: .01rem;
     font-size: .8rem;
 }
 
@@ -145,6 +143,10 @@ dropdown-item:hover {
 .dropdown-menu p {
     margin-top: -2rem;
     margin-left: 2.3rem;
+}
+
+.navbar li {
+    position: relative;
 }
 
 .dropdown-menu .services {
@@ -561,7 +563,6 @@ body {
     padding-top: 1rem;
     border-top: .1rem solid white;
     margin: auto;
-    width: 16.4rem !important;
     height: 56vh;
     margin-top: 2rem;
 
@@ -597,12 +598,12 @@ body {
 /*                               Portfolio Section                         /
 /**************************************************************************/
 .portfolio {
-    width: 97vw;
+    width: 98vw;
     background-color: var(--background-color);
     position: relative;
     top: 5rem;
     color: white;
-    padding: 3rem;
+    padding: 3rem 0rem;
 }
 
 .portfolio h1 {
@@ -1114,8 +1115,7 @@ body {
     text-align: center;
     width: 98vw;
     background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 .G-designing-portfolio a {
@@ -1128,7 +1128,6 @@ body {
 .G-designing-portfolio a:hover {
     border: .1rem solid white;
     border-radius: .2rem;
-    padding: 1rem;
     background-color: blue;
     color: white;
 }
@@ -1150,6 +1149,110 @@ body {
 
 .G-designing-portfolio .container .card {
     box-shadow: none;
+}
+
+/**************************************************************************/
+/*                               wDevelopment                          /
+/**************************************************************************/
+/* .card {
+    position: relative;
+}
+
+.btnWrapper {
+    position: absolute;
+    top: 22.5rem;
+    left: 11%;
+} */
+
+@media only screen and (max-width: 576px) {
+    .card {
+        padding: 2rem 4rem;
+        height: auto !important;
+    }
+
+    #webDesign .card {
+        padding: 0rem 0rem;
+        height: auto !important;
+    }
+
+    #booksDesign .card {
+        padding: 0rem 0rem;
+        height: auto !important;
+    }
+
+    .about {
+        width: 100vw;
+        padding: 2rem 0rem;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .our-services h1 {
+        font-size: 2rem;
+    }
+
+    #successproject {
+        width: 100vw;
+        padding: 0rem;
+    }
+
+    #homeprotfolio {
+        width: 100vw;
+        padding: 0rem;
+    }
+
+    #infoPortfolio {
+        width: 100vw;
+        padding: 0rem;
+    }
+
+    #infoPortfolio .card {
+        padding: 0rem 0rem;
+    }
+
+    #logoPortfolio .card {
+        padding: 0rem 0rem;
+    }
+
+    #booksDesign .img-div {
+        height: 20rem !important;
+    }
+
+    #webDesign .img-div {
+        height: 22rem !important;
+    }
+
+
+    #infoPortfolio .card .img-div {
+        height: auto !important;
+    }
+
+    #logoPortfolio .card .img-div {
+        height: 22rem !important;
+    }
+
+    .portfolio-div {
+        height: auto !important;
+    }
+
+    .home .card {
+        padding: 0rem 0rem !important;
+    }
+
+    .G-designing-portfolio a {
+        padding: .5rem;
+    }
+
+    .portfolio {
+        padding: 3rem 0rem !important;
+        width: 100% !important;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -1237,6 +1340,16 @@ body {
         width: 69%;
     }
 
+    .ulUxcard .card {
+        height: 24rem !important;
+    }
+
+    .portfolio .container .row .col img {
+        width: 100%;
+        margin: auto;
+        height: 98% !important;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1257,6 +1370,13 @@ body {
         width: 100%;
         margin: auto;
     }
+
+    .ulUxcard .card {
+        height: 27rem !important;
+    }
+
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1264,6 +1384,7 @@ body {
     html {
         font-size: 100%;
     }
+
     .our-services .container .row .col .card {
 
         height: 62vh;
