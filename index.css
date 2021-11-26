@@ -1175,6 +1175,11 @@ body {
         height: auto !important;
     }
 
+    .testimonials .card {
+        padding: 2rem 0rem;
+
+    }
+
     #booksDesign .card {
         padding: 0rem 0rem;
         height: auto !important;
