@@ -207,8 +207,8 @@ body {
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    top: 10rem;
-    left: 8rem;
+    top: 8rem;
+    left: 6rem;
     display: inline-block;
     animation: abc;
     animation-duration: 20s;
@@ -244,7 +244,7 @@ body {
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    top: 4rem;
+    top: 7rem;
     left: 34%;
     display: inline-block;
     animation: circlebig;
@@ -266,7 +266,7 @@ body {
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    top: 20rem;
+    top: 15rem;
     left: 5rem;
     opacity: 0.1;
     display: inline-block;
@@ -281,12 +281,15 @@ body {
     0% {
         width: 25rem;
         height: 25rem;
+        border-radius: 100% !important;
+
 
     }
 
     100% {
         width: 25rem;
         height: 25rem;
+        border-radius: 100% !important;
         transform: rotate(180deg);
     }
 
@@ -299,8 +302,8 @@ body {
     border: 1rem solid blue;
     border-radius: 50%;
     position: absolute;
-    top: 20rem;
-    left: 10rem;
+    top: 8rem;
+    left: 8rem;
     display: inline-block;
     animation: abc1;
     animation-duration: 20s;
@@ -359,21 +362,16 @@ body {
 /**************************************************************************/
 .header {
     width: 90vw;
-    height: 73vh;
+    height: 100vh;
     color: white;
-    position: relative;
     top: 10rem;
-    display: grid;
     align-items: center;
     align-content: center;
     text-align: center;
     border-bottom: 10rem solid transparent;
     margin: auto;
     box-shadow: var(--box-shadow);
-}
-
-.testimonialsHeader {
-    height: 77vh;
+    clear: both;
 }
 
 .header-txt {
@@ -431,9 +429,17 @@ body {
 }
 
 .header .content {
-    position: relative;
-    top: 0rem;
+    margin-top: 13rem;
     display: inline-block;
+}
+
+#patner .content {
+    margin-top: 8rem;
+    display: inline-block;
+}
+
+.graphpor .content {
+    margin-top: 6rem !important;
 }
 
 .header .content img {
@@ -487,24 +493,16 @@ body {
 /*                               About Section                             /
 /**************************************************************************/
 .about {
-    width: 97vw;
+    width: 100%;
     color: white;
     text-align: center;
     background-color: var(--background-color);
-    position: relative;
-    top: 10rem;
-    padding: 3rem;
+    margin-top: 3rem !important;
+    margin: auto;
 }
 
 .about .container {
     box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
-}
-
-.about .container .row .col img {
-    /* height: 30rem !important; */
-    width: 100%;
-
-
 }
 
 .about h1 {
@@ -529,14 +527,14 @@ body {
 }
 
 .about .btn {
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
 
 /**************************************************************************/
 /*                               Services Section                          /
 /**************************************************************************/
 .our-services {
-    width: 98vw;
+    width: 100%;
     background-color: var(--background-color);
     background-image: url(media/servicesbg.webp);
     background-blend-mode: multiply;
@@ -544,9 +542,9 @@ body {
     color: white;
     padding: 3rem 0rem;
     text-align: center;
-    position: relative;
     top: 6.5rem;
     box-shadow: var(--box-shadow);
+    margin: auto;
 }
 
 .our-services h1 {
@@ -598,12 +596,11 @@ body {
 /*                               Portfolio Section                         /
 /**************************************************************************/
 .portfolio {
-    width: 98vw;
+    width: 100%;
     background-color: var(--background-color);
-    position: relative;
-    top: 5rem;
     color: white;
-    padding: 3rem 0rem;
+    margin: auto;
+    padding: 2rem 0;
 }
 
 .portfolio h1 {
@@ -673,7 +670,7 @@ body {
 
 .portfolio-details-div {
     height: 23rem;
-    background-color: #DB1515;
+    background-color: blue;
     position: absolute;
     top: .5rem;
     left: .5rem;
@@ -692,27 +689,31 @@ body {
     overflow: hidden;
 }
 
-.portfolio .container-fluid {
+#successproject .container {
     color: white;
     text-align: center;
 }
 
-.portfolio .container-fluid .row .col .card {
+#successproject .container .row .col .card {
     background-color: var(--background-color);
     height: 9rem;
 
+}
+
+#successproject {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: auto;
 }
 
 /**************************************************************************/
 /*                               Testimonials Section                      /
 /**************************************************************************/
 .testimonials {
-    width: 97vw;
+    width: 100%;
     background-color: var(--background-color);
-    position: relative;
-    top: 5rem;
     text-align: center;
-    padding: 3rem;
+    margin: auto;
 }
 
 .testimonials i {
@@ -804,12 +805,11 @@ body {
 /*                               Clients Section                           /
 /**************************************************************************/
 .clients {
-    width: 97vw;
+    width: 100%;
     background-color: var(--background-color);
-    position: relative;
-    top: 5rem;
     text-align: center;
     padding: 3rem;
+    margin-top: 3rem !important;
 }
 
 #headertxtId {
@@ -908,11 +908,10 @@ body {
 /*                               Contact Section                           /
 /**************************************************************************/
 .contact {
-    width: 97vw;
+    width: 97%;
     background-color: var(--background-color);
-    position: relative;
-    top: 5rem;
     padding: 3rem;
+    margin: auto;
 }
 
 .contact h3 {
@@ -997,11 +996,11 @@ body {
 /*                               Footer Section                            /
 /**************************************************************************/
 .footer {
-    width: 98vw;
+    width: 100%;
     background-color: azure;
-    position: relative;
-    top: 5rem;
     padding: 2rem 0;
+    margin-top: 4rem !important;
+    margin: auto;
 }
 
 .footer h3 {
@@ -1110,12 +1109,11 @@ body {
 /*                               Portfolio Section                         /
 /**************************************************************************/
 .G-designing-portfolio {
-    position: relative;
-    top: 14rem;
     text-align: center;
-    width: 98vw;
+    width: 100%;
     background-color: white;
-    padding: 2rem 0;
+    margin: 4rem auto;
+    padding-top: 3rem !important;
 }
 
 .G-designing-portfolio a {
@@ -1154,15 +1152,9 @@ body {
 /**************************************************************************/
 /*                               wDevelopment                          /
 /**************************************************************************/
-/* .card {
+.card {
     position: relative;
 }
-
-.btnWrapper {
-    position: absolute;
-    top: 22.5rem;
-    left: 11%;
-} */
 
 @media only screen and (max-width: 576px) {
     .card {
@@ -1176,7 +1168,8 @@ body {
     }
 
     .testimonials .card {
-        padding: 2rem 0rem;
+        padding: 1.5rem 0rem;
+        width: 18rem;
 
     }
 
@@ -1186,7 +1179,6 @@ body {
     }
 
     .about {
-        width: 100vw;
         padding: 2rem 0rem;
     }
 
@@ -1201,6 +1193,10 @@ body {
     #successproject {
         width: 100vw;
         padding: 0rem;
+    }
+
+    #successproject .card {
+        margin: 1.5rem 1.5rem;
     }
 
     #homeprotfolio {
@@ -1229,6 +1225,10 @@ body {
         height: 22rem !important;
     }
 
+    .home .img-div {
+        height: 22rem !important;
+    }
+
 
     #infoPortfolio .card .img-div {
         height: auto !important;
@@ -1244,6 +1244,7 @@ body {
 
     .home .card {
         padding: 0rem 0rem !important;
+        margin: 1.5rem 1.5rem;
     }
 
     .G-designing-portfolio a {
@@ -1258,6 +1259,50 @@ body {
     h3 {
         font-size: 2rem;
     }
+
+    #infoPortfolio {
+        padding: 1rem 1rem !important;
+    }
+
+    .our-services .card {
+        margin: 1.5rem 1rem !important;
+
+    }
+
+    #logoPortfolio {
+        padding: 3rem 1rem !important;
+    }
+
+    #booksDesign {
+        padding: 3rem 1rem !important;
+    }
+
+    #webDesign {
+        padding: 3rem 1rem !important;
+    }
+
+    .pricing-section .card {
+        padding: 0rem 0rem;
+    }
+
+    .pricing-section .container {
+        padding: 0rem 2rem;
+    }
+
+    .about .container .row .col img {
+        width: 82%;
+    }
+
+    .webDevBtn,
+    .webBtn,
+    .socialBtn,
+    .grapDesignBtn,
+    .indexBtn,
+    .digiBtnWrap,
+    .uiuxBtn {
+        margin-top: 2rem;
+    }
+
 }
 
 
@@ -1266,7 +1311,7 @@ body {
 /**************************************************************************/
 
 .pricing-section {
-    width: 98vw;
+    width: 100%;
     background-color: white;
     padding-top: 3rem;
     margin-top: 12rem;
@@ -1300,7 +1345,6 @@ body {
 
 @media only screen and (max-width: 710px) {
     .pricing-section a {
-
         padding: .4rem;
 
     }
@@ -1312,11 +1356,6 @@ body {
         font-size: 70%;
     }
 
-
-    .header {
-        text-align: left;
-    }
-
     .circlebig1,
     .circlebig,
     .circle,
@@ -1325,10 +1364,14 @@ body {
         display: none;
     }
 
+    .header {
+        text-align: left;
+    }
 
     #aboutImgcol img {
         margin-left: -2rem;
     }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1355,6 +1398,108 @@ body {
         height: 98% !important;
     }
 
+    .circlebig1,
+    .circlebig,
+    .circle,
+    .circle2,
+    .circle1 {
+        display: none;
+    }
+}
+
+
+
+/*Extra small device*/
+@media only screen and (min-width: 576px) {
+    .contentbtnWrapper {
+        position: absolute;
+        top: 24rem;
+        left: 20%;
+    }
+
+    .our-services .card {
+        height: 28rem !important;
+
+    }
+
+    #digitalService .card {
+        height: 24rem !important;
+    }
+
+    .digiBtnWrap {
+        position: absolute;
+        top: 20rem;
+        left: 19%;
+    }
+
+    #grapDesign .card {
+        height: 27rem !important;
+    }
+
+    .grapDesignBtn {
+        position: absolute;
+        top: 23rem;
+        left: 21%;
+    }
+
+    .circlebig {
+        left: 49%;
+        top: 6rem;
+    }
+
+    #indexService .card {
+        height: 19rem !important;
+    }
+
+    .indexBtn {
+        position: absolute;
+        top: 15.5rem;
+        left: 33%;
+    }
+
+    #socialService .card {
+        height: 22rem !important;
+    }
+
+    .socialBtn {
+        position: absolute;
+        top: 18.4rem;
+        left: 21%;
+    }
+
+    #uiuxService .card {
+        height: 24rem !important;
+    }
+
+    .uiuxBtn {
+        position: absolute;
+        top: 20rem;
+        left: 14%;
+    }
+
+    #videoService .card {
+        height: 22rem !important;
+    }
+
+    #webService .card {
+        height: 22rem !important;
+    }
+
+    .webBtn {
+        position: absolute;
+        top: 18.5rem;
+        left: 16%;
+    }
+
+    #wedDevService .card {
+        height: 25rem !important;
+    }
+
+    .webDevBtn {
+        position: absolute;
+        top: 21.5rem;
+        left: 16%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1364,7 +1509,7 @@ body {
     }
 
     .circlebig {
-        left: 46%;
+        left: 51%;
     }
 
     .about .container .row .col img {
@@ -1380,14 +1525,144 @@ body {
         height: 27rem !important;
     }
 
+    .contentbtnWrapper {
+        position: absolute;
+        top: 27.5rem;
+        left: 17%;
+    }
 
+    .our-services .card {
+        height: 31rem !important;
 
+    }
+
+    #digitalService .card {
+        height: 24rem !important;
+    }
+
+    .digiBtnWrap {
+        position: absolute;
+        top: 20rem;
+        left: 15%;
+    }
+
+    #grapDesign .card {
+        height: 27rem !important;
+    }
+
+    .grapDesignBtn {
+        position: absolute;
+        top: 23rem;
+        left: 16%;
+    }
+
+    .circlebig1,
+    .circlebig,
+    .circle,
+    .circle2,
+    .circle1 {
+        display: block;
+    }
+
+    #indexService .card {
+        height: 19rem !important;
+    }
+
+    .indexBtn {
+        position: absolute;
+        top: 15.5rem;
+        left: 33%;
+    }
+
+    #socialService .card {
+        height: 23.5rem !important;
+    }
+
+    .socialBtn {
+        position: absolute;
+        top: 20rem;
+        left: 16%;
+    }
+
+    #uiuxService .card {
+        height: 26rem !important;
+    }
+
+    .uiuxBtn {
+        position: absolute;
+        top: 22.5rem;
+        left: 11%;
+    }
+
+    #videoService .card {
+        height: 22rem !important;
+    }
+
+    #webService .card {
+        height: 22rem !important;
+    }
+
+    .webBtn {
+        position: absolute;
+        top: 18.5rem;
+        left: 10%;
+    }
+
+    #wedDevService .card {
+        height: 26rem !important;
+    }
+
+    .webDevBtn {
+        position: absolute;
+        top: 22.5rem;
+        left: 10%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     html {
         font-size: 100%;
+    }
+
+    .contentbtnWrapper {
+
+        position: absolute;
+        top: 25.5rem;
+        left: 19%;
+
+    }
+
+    .circlebig1,
+    .circlebig,
+    .circle,
+    .circle2,
+    .circle1 {
+        display: block;
+    }
+
+    .our-services .card {
+        height: 29rem !important;
+    }
+
+    #digitalService .card {
+        height: 24rem !important;
+    }
+
+    .digiBtnWrap {
+        position: absolute;
+        top: 20rem;
+        left: 18%;
+    }
+
+    #grapDesign .card {
+        height: 27rem !important;
+    }
+
+    .grapDesignBtn {
+        position: absolute;
+        top: 23rem;
+        left: 19%;
     }
 
     .our-services .container .row .col .card {
@@ -1397,6 +1672,65 @@ body {
 
     .card-body h3 {
         font-size: 3.3rem !important;
+    }
+
+    .circlebig {
+        left: 54%;
+        top: 6rem;
+    }
+
+    #indexService .card {
+        height: 19rem !important;
+    }
+
+    .indexBtn {
+        position: absolute;
+        top: 15.5rem;
+        left: 33%;
+    }
+
+    #socialService .card {
+        height: 24.5rem !important;
+    }
+
+    .socialBtn {
+        position: absolute;
+        top: 21rem;
+        left: 19%;
+    }
+
+    #uiuxService .card {
+        height: 25rem !important;
+    }
+
+    .uiuxBtn {
+        position: absolute;
+        top: 21.5rem;
+        left: 13%;
+    }
+
+    #videoService .card {
+        height: 22rem !important;
+    }
+
+    #webService .card {
+        height: 22rem !important;
+    }
+
+    .webBtn {
+        position: absolute;
+        top: 18.5rem;
+        left: 13%;
+    }
+
+    #wedDevService .card {
+        height: 25rem !important;
+    }
+
+    .webDevBtn {
+        position: absolute;
+        top: 21.5rem;
+        left: 13%;
     }
 }
 
@@ -1410,7 +1744,104 @@ body {
         width: 76%;
     }
 
+    .circlebig1,
+    .circlebig,
+    .circle,
+    .circle2,
+    .circle1 {
+        display: block;
+    }
+
+    .contentbtnWrapper {
+        position: absolute;
+        top: 27.5rem;
+        left: 14%;
+    }
+
+    .our-services .card {
+        height: 31rem !important;
+    }
+
+    #digitalService .card {
+        height: 24rem !important;
+    }
+
+    .digiBtnWrap {
+        position: absolute;
+        top: 20rem;
+        left: 14%;
+    }
+
+    #grapDesign .card {
+        height: 28rem !important;
+    }
+
+    .grapDesignBtn {
+        position: absolute;
+        top: 24.5rem;
+        left: 14%;
+    }
+
     .card-body h3 {
         font-size: 4.5rem
+    }
+
+    .circlebig {
+        left: 61%;
+        top: 6rem;
+    }
+
+    #indexService .card {
+        height: 21rem !important;
+    }
+
+    .indexBtn {
+        position: absolute;
+        top: 17.5rem;
+        left: 32%;
+    }
+
+    #socialService .card {
+        height: 24.5rem !important;
+    }
+
+    .socialBtn {
+        position: absolute;
+        top: 21rem;
+        left: 14%;
+    }
+
+    #uiuxService .card {
+        height: 26rem !important;
+    }
+
+    .uiuxBtn {
+        position: absolute;
+        top: 22.5rem;
+        left: 8%;
+    }
+
+    #webService .card {
+        height: 23rem !important;
+    }
+
+    .webBtn {
+        position: absolute;
+        top: 19.5rem;
+        left: 8%;
+    }
+
+    #wedDevService .card {
+        height: 27rem !important;
+    }
+
+    .webDevBtn {
+        position: absolute;
+        top: 23rem;
+        left: 8%;
+    }
+
+    #videoService .card {
+        height: 23.5rem !important;
     }
 }
