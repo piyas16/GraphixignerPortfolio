@@ -151,10 +151,6 @@ dropdown-item:hover {
     margin-top: -2rem !important;
 }
 
-.margin-top span {
-    top: 1.3rem !important;
-}
-
 #plan {
     font-size: .8rem;
     color: blue;
