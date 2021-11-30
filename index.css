@@ -296,6 +296,7 @@ body {
     animation-iteration-count: infinite;
     transform: translate(0, 0);
     box-shadow: var(--box-shadow);
+    z-index: -1;
 }
 
 @keyframes abc1 {
@@ -326,6 +327,7 @@ body {
     animation-iteration-count: infinite;
     transform: translate(0, 0);
     box-shadow: var(--box-shadow);
+    z-index: -1;
 
 }
 
@@ -478,6 +480,7 @@ body {
 /**************************************************************************/
 /*                               About Section                             /
 /**************************************************************************/
+
 .about {
     width: 100%;
     color: white;
@@ -485,8 +488,9 @@ body {
     background-color: var(--background-color);
     padding-top: 4rem;
     margin: auto;
+    margin-top: 3rem;
 }
-
+.firstAbout{margin-top: 0 !important;}
 .about .container {
     box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
 }
@@ -1740,21 +1744,21 @@ body {
 
     .contentbtnWrapper {
         position: absolute;
-        top: 27.5rem;
+        top: 28.5rem;
         left: 14%;
     }
 
     .our-services .card {
-        height: 31rem !important;
+        height: 32.5rem !important;
     }
 
     #digitalService .card {
-        height: 24rem !important;
+        height: 25rem !important;
     }
 
     .digiBtnWrap {
         position: absolute;
-        top: 20rem;
+        top: 21.5rem;
         left: 14%;
     }
 
