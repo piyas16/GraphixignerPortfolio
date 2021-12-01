@@ -1669,7 +1669,7 @@ body {
     }
 
     .circlebig {
-        left: 54%;
+        left: 54% !important;
         top: 6rem;
     }
 
@@ -1781,7 +1781,7 @@ body {
     }
 
     .circlebig {
-        left: 61%;
+        left: 61% !important;
         top: 6rem;
     }
 
