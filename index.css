@@ -1503,7 +1503,7 @@ body {
     }
 
     .circlebig {
-        left: 58%;
+        left: 58% !important;
     }
 
     .about .container .row .col img {
@@ -1559,12 +1559,12 @@ body {
     }
 
     #indexService .card {
-        height: 19rem !important;
+        height: 20rem !important;
     }
 
     .indexBtn {
         position: absolute;
-        top: 15.5rem;
+        top: 16.5rem;
         left: 33%;
     }
 
