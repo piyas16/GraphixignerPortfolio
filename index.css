@@ -490,7 +490,11 @@ body {
     margin: auto;
     margin-top: 3rem;
 }
-.firstAbout{margin-top: 0 !important;}
+
+.firstAbout {
+    margin-top: 0 !important;
+}
+
 .about .container {
     box-shadow: .3rem .3rem .3rem .3rem rgb(1, 0, 5);
 }
@@ -1517,7 +1521,7 @@ body {
 
     .contentbtnWrapper {
         position: absolute;
-        top: 27.5rem;
+        top: 26.9rem;
         left: 17%;
     }
 
@@ -1527,12 +1531,12 @@ body {
     }
 
     #digitalService .card {
-        height: 24rem !important;
+        height: 24.5rem !important;
     }
 
     .digiBtnWrap {
         position: absolute;
-        top: 20rem;
+        top: 20.5rem;
         left: 15%;
     }
 
@@ -1585,16 +1589,16 @@ body {
     }
 
     #videoService .card {
-        height: 22rem !important;
+        height: 22.3rem !important;
     }
 
     #webService .card {
-        height: 22rem !important;
+        height: 23rem !important;
     }
 
     .webBtn {
         position: absolute;
-        top: 18.5rem;
+        top: 19.5rem;
         left: 10%;
     }
 
